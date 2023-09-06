@@ -35,4 +35,8 @@ module "storage-account-module" {
   rg_name                     = var.rg_name
   location                 = var.location
   environment              = var.environment
+  client_id = var.client_id
+  client_secret = var.client_secret
+  tenant_id = var.tenant_id
+  subscription_id = var.subscription_id
 }
