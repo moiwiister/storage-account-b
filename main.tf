@@ -28,15 +28,11 @@ provider "azurerm" {
 
 module "storage-account-module" {
   source  = "app.terraform.io/ALEXANDREDEBARGIS-training/storage-account-module/azurerm"
-  version = "1.0.0"
+  version = "1.2.0"
   # insert required variables here
 
   stg_name                    = var.stg_name
   rg_name                     = var.rg_name
   location                 = var.location
   environment              = var.environment
-  client_id = var.client_id
-  client_secret = var.client_secret
-  tenant_id = var.tenant_id
-  subscription_id = var.subscription_id
 }
